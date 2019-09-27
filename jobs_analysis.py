@@ -15,7 +15,7 @@ job=input("Enter the job title nurs or cop:") #get the job from the user
 tot_job=0 #get the total number for who work this job
 for i in lst:
     if job in i[0]: # if the job is in the first element of the list (which has the job name and the gender)
-        tot_job+=i[1] #increase the counter by one
+        tot_job+=i[1] #increase the counter by the weight .
 #print(tot_job)
 gender=input("Enter the gender wom or man:") #get the gender
 total_gender_job=0
