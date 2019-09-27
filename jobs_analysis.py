@@ -4,7 +4,7 @@ hand.close()
 words=data.split("\n") #split each line
 data=dict()
 for word in words: #make a dictionary ,each item is the job the gender with its weight
-    data[word]=data.get(word,0)+1
+    data[word]=data.get(word,0)+1 #if the key (word) exists , then icrease its value by one , if it's not exist , creat new key by zero value and add 1.
 #print (data)
 d=data.items() #convert the dictionary into dictionary items to read the data
 lst=list()
@@ -17,11 +17,11 @@ for i in lst:
     if job in i[0]: # if the job is in the first element of the list (which has the job name and the gender)
         tot_job+=i[1] #increase the counter by one
 #print(tot_job)
-gender=input("Enter the gender wom or man:") #get the gender 
+gender=input("Enter the gender wom or man:") #get the gender
 total_gender_job=0
 for i in lst:
     if job+" "+gender in i[0]: #search for the job and the gender in the list to calculate its precentege
-        total_gender_job=i[1] #we get the gender+job weight 
+        total_gender_job=i[1] #we get the gender+job weight
         break               #so break
 #print(total_gender_job)
 if(gender=="wom"):
