@@ -8,7 +8,7 @@ for word in words: #make a dictionary ,each item is the job the gender with its 
 #print (data)
 d=data.items() #convert the dictionary into dictionary items to read the data
 lst=list()
-for key,val in d: #make a list ith 2 members , the first member is the job+gender the another is their weight
+for key,val in d: #make a list with 2 members , the first member is the job+gender the another is their weight
     lst.append([key,val])
 #print(lst)
 job=input("Enter the job title nurs or cop:") #get the job from the user
